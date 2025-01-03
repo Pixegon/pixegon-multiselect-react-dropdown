@@ -228,9 +228,9 @@ export class Multiselect extends React.Component<IMultiselectProps, any> {
 
   filterOptionsByInput() {
     let { options, filteredOptions, inputValue } = this.state;
-    const { isObject, displayValue } = this.props;
+    const { isObject, displayValue, groupBy } = this.props;
     if (isObject) {
-      options = filteredOptions.filter(i => this.matchValues(i[displayValue], inputValue))
+      options = filteredOptions.filter(i => this.matchValues(i[displayValue], inputValue) || (i[groupBy] ? this.matchValues(i[groupBy], inputValue) : false));
     } else {
       options = filteredOptions.filter(i => this.matchValues(i, inputValue));
     }

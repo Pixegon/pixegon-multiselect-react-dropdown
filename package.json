@@ -1,6 +1,6 @@
 {
-  "name": "multiselect-react-dropdown",
-  "version": "2.0.24",
+  "name": "pixegon-multiselect-react-dropdown",
+  "version": "2.0.25",
   "description": "React multiselect dropdown component with search and various features",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -11,12 +11,12 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "author": "srigar s",
+  "author": "Gautham Ilango",
   "license": "MIT",
   "homepage": "https://multiselect-react-dropdown.vercel.app/?path=/docs/multiselect-dropdown--flat-array",
   "repository": {
     "type": "git",
-    "url": "https://github.com/srigar/multiselect-react-dropdown"
+    "url": "https://github.com/pixegon/pixegon-multiselect-react-dropdown"
   },
   "peerDependencies": {
     "react": "^16.7.0 || ^17.0.0 || ^18.0.0"
